@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.Pages.LoginPage"
+             BackgroundColor="{StaticResource PageBackgroundColor}">
+
+    <VerticalStackLayout Padding="30,0" Spacing="25" VerticalOptions="Center">
+        <Image Source="dotnet_bot.png" HeightRequest="100" Aspect="AspectFit" HorizontalOptions="Center" />
+        
+        <Label Text="Login" Style="{StaticResource Headline}" HorizontalOptions="Center" />
+
+        <Entry Placeholder="Username" x:Name="UsernameEntry" Style="{StaticResource EntryStyle}" />
+        <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry" Style="{StaticResource EntryStyle}" />
+        
+        <Button Text="Login" Clicked="OnLoginClicked" Style="{StaticResource ButtonStyle}" />
+        
+        <Label Text="Don't have an account? Register" TextColor="Blue" HorizontalOptions="Center" />
+    </VerticalStackLayout>
+
+</ContentPage>
