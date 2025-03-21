@@ -447,6 +447,7 @@ C:\Users\LENOVO\Documents\MAUI app\MAUI\obj\Debug\net9.0-windows10.0.19041.0\win
 C:\Users\LENOVO\Documents\MAUI app\MAUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MAUI.AssemblyInfoInputs.cache
 C:\Users\LENOVO\Documents\MAUI app\MAUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MAUI.AssemblyInfo.cs
 C:\Users\LENOVO\Documents\MAUI app\MAUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MAUI.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\MAUI app\MAUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MAUI.sourcelink.json
 C:\Users\LENOVO\Documents\MAUI app\MAUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlC.stamp
 C:\Users\LENOVO\Documents\MAUI app\MAUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MAUI.csproj.Up2Date
 C:\Users\LENOVO\Documents\MAUI app\MAUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MAUI.dll

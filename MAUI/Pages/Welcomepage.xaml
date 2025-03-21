@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.Pages.WelcomePage"
+             BackgroundColor="White">
+
+    <Grid Padding="30" RowSpacing="20" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image Source="logo.png" HeightRequest="100" Aspect="AspectFit" HorizontalOptions="Center" Grid.Row="0" />
+
+        <Label Text="Citas médicas" 
+               FontSize="36" 
+               FontAttributes="Bold" 
+               TextColor="#007AFF" 
+               HorizontalOptions="Center" 
+               Grid.Row="1" />
+
+        <Label Text="Doctores" 
+               FontSize="18" 
+               TextColor="#007AFF" 
+               HorizontalOptions="Center" 
+               Grid.Row="2" />
+
+        <Label Text="Cada diagnóstico, cada tratamiento y cada sonrisa que brindas son un regalo para todos"
+               FontSize="14" 
+               TextColor="Gray" 
+               HorizontalOptions="Center" 
+               HorizontalTextAlignment="Center" 
+               Margin="0,20,0,0" 
+               Grid.Row="3" />
+
+        <Button Text="Iniciar Sesión" 
+                BackgroundColor="#007AFF" 
+                TextColor="White" 
+                CornerRadius="20" 
+                HeightRequest="50" 
+                HorizontalOptions="FillAndExpand" 
+                Clicked="OnLoginClicked" 
+                Grid.Row="4" />
+
+        <Button Text="Registrarse" 
+                BackgroundColor="#E0E0E0" 
+                TextColor="#007AFF" 
+                CornerRadius="20" 
+                HeightRequest="50" 
+                HorizontalOptions="FillAndExpand" 
+                Clicked="OnRegisterClicked" 
+                Grid.Row="5" />
+    </Grid>
+
+</ContentPage>

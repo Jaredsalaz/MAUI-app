@@ -54,6 +54,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Pages.RegisterPage.xa
 build_metadata.AdditionalFiles.TargetPath = Pages\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\RegisterPage.xaml
 
+[C:/Users/LENOVO/Documents/MAUI app/MAUI/Pages/Welcomepage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Pages.Welcomepage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Welcomepage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Welcomepage.xaml
+
 [C:/Users/LENOVO/Documents/MAUI app/MAUI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Resources.Styles.Colors.xaml

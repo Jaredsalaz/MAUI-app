@@ -5,6 +5,7 @@
        x:Class="MAUI.AppShell">
 
     <ShellItem>
+        <ShellContent Title="Welcome" ContentTemplate="{DataTemplate local:WelcomePage}" />
         <ShellContent Title="Login" ContentTemplate="{DataTemplate local:LoginPage}" />
         <ShellContent Title="Register" ContentTemplate="{DataTemplate local:RegisterPage}" />
         <ShellContent Title="Appointments" ContentTemplate="{DataTemplate local:AppointmentPage}" />
