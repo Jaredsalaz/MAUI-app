@@ -14,7 +14,7 @@ namespace MAUI.Pages
             string username = UsernameEntry.Text;
             string password = PasswordEntry.Text;
 
-            // Aquí puedes añadir la lógica para autenticar al usuario
+           
             bool isAuthenticated = await AuthenticateUser(username, password);
 
             if (isAuthenticated)
