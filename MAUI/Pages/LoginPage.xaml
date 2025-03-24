@@ -2,19 +2,95 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI.Pages.LoginPage"
-             BackgroundColor="{StaticResource PageBackgroundColor}">
+             BackgroundColor="White">
 
-    <VerticalStackLayout Padding="30,0" Spacing="25" VerticalOptions="Center">
-        <Image Source="dotnet_bot.png" HeightRequest="100" Aspect="AspectFit" HorizontalOptions="Center" />
-        
-        <Label Text="Login" Style="{StaticResource Headline}" HorizontalOptions="Center" />
+    <Grid Padding="30" RowSpacing="20" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
-        <Entry Placeholder="Username" x:Name="UsernameEntry" Style="{StaticResource EntryStyle}" />
-        <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry" Style="{StaticResource EntryStyle}" />
-        
-        <Button Text="Login" Clicked="OnLoginClicked" Style="{StaticResource ButtonStyle}" />
-        
-        <Label Text="Don't have an account? Register" TextColor="Blue" HorizontalOptions="Center" />
-    </VerticalStackLayout>
+        <Label Text="Iniciar Sesión"
+               FontFamily="League Spartan"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="#2260FF"
+               HorizontalOptions="Center"
+               Grid.Row="0" />
+
+        <Label Text="Bienvenido"
+               FontFamily="League Spartan"
+               FontSize="18"
+               FontAttributes="Bold"
+               TextColor="#2260FF"
+               HorizontalOptions="Center"
+               Grid.Row="1" />
+
+        <Label Text="La medicina es un arte que se practica con el corazón"
+               FontSize="14"
+               TextColor="Gray"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Margin="0,10,0,20"
+               Grid.Row="2" />
+
+        <Border BackgroundColor="#E0E0E0" StrokeShape="RoundRectangle 13" Padding="0" HeightRequest="45" WidthRequest="299" HorizontalOptions="Center" Grid.Row="3">
+            <Entry Placeholder="Correo o Número Telefónico"
+                   FontFamily="League Spartan"
+                   FontSize="14"
+                   TextColor="Black"
+                   BackgroundColor="Transparent"
+                   x:Name="UsernameEntry" />
+        </Border>
+
+        <Grid Grid.Row="4">
+            <Border BackgroundColor="#E0E0E0" StrokeShape="RoundRectangle 13" Padding="0" HeightRequest="45" WidthRequest="299" HorizontalOptions="Center">
+                <Entry Placeholder="Contraseña"
+                       FontFamily="League Spartan"
+                       FontSize="14"
+                       TextColor="Black"
+                       BackgroundColor="Transparent"
+                       IsPassword="True"
+                       x:Name="PasswordEntry" />
+            </Border>
+            <ImageButton Source="eye_icon.png"
+                         WidthRequest="24"
+                         HeightRequest="24"
+                         HorizontalOptions="End"
+                         VerticalOptions="Center"
+                         Margin="0,0,15,0"
+                         Clicked="OnTogglePasswordVisibility" />
+        </Grid>
+
+        <Label Text="¿Olvidaste tu contraseña?"
+               FontSize="14"
+               TextColor="#2260FF"
+               HorizontalOptions="End"
+               Margin="0,10,0,0"
+               Grid.Row="5" />
+
+        <Border StrokeShape="RoundRectangle 30" Padding="0" HeightRequest="45" WidthRequest="207" HorizontalOptions="Center" Grid.Row="6">
+            <Button Text="Iniciar Sesión"
+                    FontFamily="League Spartan"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    BackgroundColor="#2260FF"
+                    TextColor="White"
+                    Clicked="OnLoginClicked" />
+        </Border>
+
+        <Label Text="No tienes cuenta? Registrarse"
+               FontSize="14"
+               TextColor="#2260FF"
+               HorizontalOptions="Center"
+               Margin="0,20,0,0"
+               Grid.Row="7" />
+    </Grid>
 
 </ContentPage>

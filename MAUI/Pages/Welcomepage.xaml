@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI.Pages.WelcomePage"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="White">
 
-    <Grid Padding="30" RowSpacing="20" VerticalOptions="Center">
+    <Grid Padding="30" RowSpacing="20" VerticalOptions="CenterAndExpand">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -16,18 +17,21 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Image Source="logo.png" HeightRequest="100" Aspect="AspectFit" HorizontalOptions="Center" Grid.Row="0" />
+        <Image Source="welcome_logo.png" HeightRequest="100" Aspect="AspectFit" HorizontalOptions="Center" Grid.Row="0" />
 
         <Label Text="Citas médicas" 
-               FontSize="36" 
-               FontAttributes="Bold" 
-               TextColor="#007AFF" 
+               FontFamily="League Spartan"
+               FontSize="48"
+               FontAttributes="None"
+               TextColor="#2260FF"
                HorizontalOptions="Center" 
                Grid.Row="1" />
 
         <Label Text="Doctores" 
-               FontSize="18" 
-               TextColor="#007AFF" 
+               FontFamily="League Spartan"
+               FontSize="24"
+               FontAttributes="None"
+               TextColor="#2260FF"
                HorizontalOptions="Center" 
                Grid.Row="2" />
 
@@ -40,20 +44,28 @@
                Grid.Row="3" />
 
         <Button Text="Iniciar Sesión" 
-                BackgroundColor="#007AFF" 
+                BackgroundColor="#2260FF" 
                 TextColor="White" 
+                FontFamily="League Spartan"
+                FontSize="24"
+                FontAttributes="Bold"
                 CornerRadius="20" 
                 HeightRequest="50" 
-                HorizontalOptions="FillAndExpand" 
+                WidthRequest="200"
+                HorizontalOptions="Center" 
                 Clicked="OnLoginClicked" 
                 Grid.Row="4" />
 
         <Button Text="Registrarse" 
                 BackgroundColor="#E0E0E0" 
-                TextColor="#007AFF" 
+                TextColor="#2260FF" 
+                FontFamily="League Spartan"
+                FontSize="24"
+                FontAttributes="Bold"
                 CornerRadius="20" 
                 HeightRequest="50" 
-                HorizontalOptions="FillAndExpand" 
+                WidthRequest="200"
+                HorizontalOptions="Center" 
                 Clicked="OnRegisterClicked" 
                 Grid.Row="5" />
     </Grid>
