@@ -48,6 +48,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Pages.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
 
+[C:/Users/MSI/Documents/7semestre/MAUI-app/MAUI/Pages/OTP-page.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Pages.OTP-page.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\OTP-page.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\OTP-page.xaml
+
 [C:/Users/MSI/Documents/7semestre/MAUI-app/MAUI/Pages/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Pages.RegisterPage.xaml

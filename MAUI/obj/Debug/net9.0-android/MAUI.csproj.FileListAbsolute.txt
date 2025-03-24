@@ -2685,3 +2685,4 @@ C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsof
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.csproj.Up2Date
+C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\resizetizer\r\drawable\otp.png

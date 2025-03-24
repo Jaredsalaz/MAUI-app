@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.Pages.OTPPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+
+    <Grid Padding="30" RowSpacing="20" VerticalOptions="CenterAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Source="otp.png"
+               HeightRequest="150"
+               Aspect="AspectFit"
+               HorizontalOptions="Center"
+               Grid.Row="0" />
+
+        <Label Text="OTP verificación"
+               FontFamily="League Spartan"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="#2260FF"
+               HorizontalOptions="Center"
+               Grid.Row="1" />
+
+        <Label Text="Le enviamos un OTP a su número registrado"
+               FontSize="14"
+               TextColor="Gray"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Margin="0,10,0,20"
+               Grid.Row="2" />
+
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Grid.Row="3">
+            <Entry x:Name="OtpEntry1" MaxLength="1" Keyboard="Numeric" WidthRequest="40" HeightRequest="40" HorizontalTextAlignment="Center" BackgroundColor="#ECF1FF" />
+            <Entry x:Name="OtpEntry2" MaxLength="1" Keyboard="Numeric" WidthRequest="40" HeightRequest="40" HorizontalTextAlignment="Center" BackgroundColor="#ECF1FF" />
+            <Entry x:Name="OtpEntry3" MaxLength="1" Keyboard="Numeric" WidthRequest="40" HeightRequest="40" HorizontalTextAlignment="Center" BackgroundColor="#ECF1FF" />
+            <Entry x:Name="OtpEntry4" MaxLength="1" Keyboard="Numeric" WidthRequest="40" HeightRequest="40" HorizontalTextAlignment="Center" BackgroundColor="#ECF1FF" />
+            <Entry x:Name="OtpEntry5" MaxLength="1" Keyboard="Numeric" WidthRequest="40" HeightRequest="40" HorizontalTextAlignment="Center" BackgroundColor="#ECF1FF" />
+            <Entry x:Name="OtpEntry6" MaxLength="1" Keyboard="Numeric" WidthRequest="40" HeightRequest="40" HorizontalTextAlignment="Center" BackgroundColor="#ECF1FF" />
+        </HorizontalStackLayout>
+
+        <Label x:Name="TimerLabel"
+               Text="0:59s"
+               FontSize="14"
+               TextColor="Red"
+               HorizontalOptions="Center"
+               Grid.Row="4"
+               Margin="0,10,0,0" />
+
+        <Button Text="Verificar"
+                FontFamily="League Spartan"
+                FontSize="24"
+                FontAttributes="Bold"
+                BackgroundColor="#2260FF"
+                TextColor="White"
+                HeightRequest="45"
+                WidthRequest="207"
+                CornerRadius="30"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="OnVerifyClicked"
+                Grid.Row="5"
+                Margin="0,20,0,0" />
+
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="5" Grid.Row="6">
+            <Label Text="¿No recibiste el código OTP?"
+                   FontSize="14"
+                   TextColor="Gray"
+                   HorizontalOptions="Center" />
+            <Label Text="Re-enviar"
+                   FontSize="14"
+                   TextColor="Red"
+                   HorizontalOptions="Center"
+                   GestureRecognizers="{TapGestureRecognizer Tapped='OnResendClicked'}" />
+        </HorizontalStackLayout>
+    </Grid>
+
+</ContentPage>
