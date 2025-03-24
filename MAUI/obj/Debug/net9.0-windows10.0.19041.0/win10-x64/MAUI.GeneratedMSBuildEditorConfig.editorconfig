@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Pages.RegisterPage.xa
 build_metadata.AdditionalFiles.TargetPath = Pages\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\RegisterPage.xaml
 
+[C:/Users/MSI/Documents/7semestre/MAUI-app/MAUI/Pages/Set-Password.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Pages.Set-Password.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Set-Password.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Set-Password.xaml
+
 [C:/Users/MSI/Documents/7semestre/MAUI-app/MAUI/Pages/Welcomepage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Pages.Welcomepage.xaml

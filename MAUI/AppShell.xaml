@@ -9,6 +9,7 @@
         <ShellContent Title="Login" ContentTemplate="{DataTemplate local:LoginPage}" />
         <ShellContent Title="Register" ContentTemplate="{DataTemplate local:RegisterPage}" />
         <ShellContent Title="Appointments" ContentTemplate="{DataTemplate local:AppointmentPage}" />
+        <ShellContent Title ="Set Password" ContentTemplate="{DataTemplate local:SetPasswordPage}" />
     </ShellItem>
 
 </Shell>
