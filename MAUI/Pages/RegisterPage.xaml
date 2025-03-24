@@ -4,6 +4,42 @@
              x:Class="MAUI.Pages.RegisterPage"
              BackgroundColor="White">
 
+    <ContentPage.Resources>
+        <Style x:Key="EntryStyle" TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="#ECF1FF" />
+            <Setter Property="PlaceholderColor" Value="#809CFF" />
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#ECF1FF" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Focused">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#ECF1FF" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+        <Style x:Key="DatePickerStyle" TargetType="DatePicker">
+            <Setter Property="BackgroundColor" Value="#ECF1FF" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#007AFF" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="CornerRadius" Value="30" />
+            <Setter Property="HeightRequest" Value="45" />
+            <Setter Property="WidthRequest" Value="207" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        </Style>
+    </ContentPage.Resources>
+
     <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
         <Label Text="Nueva Cuenta" 
                FontSize="24" 
@@ -11,30 +47,80 @@
                TextColor="#007AFF" 
                HorizontalOptions="Center" />
 
-        <Entry Placeholder="Nombre Completo" 
-               Style="{StaticResource EntryStyle}" />
+        <Label Text="Nombre Completo"
+               FontFamily="League Spartan"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="#000000"
+               VerticalTextAlignment="Center" />
+        <Border BackgroundColor="#E0E0E0" StrokeShape="RoundRectangle 13" Padding="0" HeightRequest="45" HorizontalOptions="FillAndExpand">
+            <Entry Placeholder="Nombre Completo" Style="{StaticResource EntryStyle}" />
+        </Border>
 
-        <Entry Placeholder="Contraseña" 
-               IsPassword="True" 
-               Style="{StaticResource EntryStyle}" />
+        <Label Text="Contraseña"
+               FontFamily="League Spartan"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="#000000"
+               VerticalTextAlignment="Center" />
+        <Border BackgroundColor="#E0E0E0" StrokeShape="RoundRectangle 13" Padding="0" HeightRequest="45" HorizontalOptions="FillAndExpand">
+            <Entry Placeholder="Contraseña" IsPassword="True" Style="{StaticResource EntryStyle}" />
+        </Border>
 
-        <Entry Placeholder="Correo" 
-               Keyboard="Email" 
-               Style="{StaticResource EntryStyle}" />
+        <Label Text="Correo"
+               FontFamily="League Spartan"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="#000000"
+               VerticalTextAlignment="Center" />
+        <Border BackgroundColor="#E0E0E0" StrokeShape="RoundRectangle 13" Padding="0" HeightRequest="45" HorizontalOptions="FillAndExpand">
+            <Entry Placeholder="Correo" Keyboard="Email" Style="{StaticResource EntryStyle}" />
+        </Border>
 
-        <Entry Placeholder="Telefono" 
-               Keyboard="Telephone" 
-               Style="{StaticResource EntryStyle}" />
+        <Label Text="Telefono"
+               FontFamily="League Spartan"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="#000000"
+               VerticalTextAlignment="Center" />
+        <Border BackgroundColor="#E0E0E0" StrokeShape="RoundRectangle 13" Padding="0" HeightRequest="45" HorizontalOptions="FillAndExpand">
+            <Entry Placeholder="Telefono" Keyboard="Telephone" Style="{StaticResource EntryStyle}" />
+        </Border>
 
-        <Entry Placeholder="Fecha De Nacimiento" 
-               Style="{StaticResource EntryStyle}" />
+        <Label Text="Fecha De Nacimiento"
+               FontFamily="League Spartan"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="#000000"
+               VerticalTextAlignment="Center" />
+        <Border BackgroundColor="#E0E0E0" StrokeShape="RoundRectangle 13" Padding="0" HeightRequest="45" HorizontalOptions="FillAndExpand">
+            <DatePicker Format="dd/MM/yyyy" Style="{StaticResource DatePickerStyle}" />
+        </Border>
 
-        <Label Text="Al continuar, usted acepta las Condiciones de uso y Políticas de privacidad."
-               FontSize="12" 
-               TextColor="Gray" 
-               HorizontalOptions="Center" 
-               HorizontalTextAlignment="Center" 
-               Margin="0,10,0,0" />
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Al continuar, usted acepta las " />
+                    <Span Text="Condiciones de uso" TextColor="#007AFF" TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTermsOfUseTapped" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span Text=" y " />
+                    <Span Text="Políticas de privacidad" TextColor="#007AFF" TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnPrivacyPolicyTapped" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span Text="." />
+                </FormattedString>
+            </Label.FormattedText>
+            <Label.FontSize>12</Label.FontSize>
+            <Label.TextColor>Gray</Label.TextColor>
+            <Label.HorizontalOptions>Center</Label.HorizontalOptions>
+            <Label.HorizontalTextAlignment>Center</Label.HorizontalTextAlignment>
+            <Label.Margin>0,10,0,0</Label.Margin>
+        </Label>
 
         <Button Text="Registrarse" 
                 Style="{StaticResource ButtonStyle}" 
@@ -48,8 +134,6 @@
 
         <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
             <ImageButton Source="google.png" WidthRequest="40" HeightRequest="40" />
-            <ImageButton Source="facebook.png" WidthRequest="40" HeightRequest="40" />
-            <ImageButton Source="twitter.png" WidthRequest="40" HeightRequest="40" />
         </HorizontalStackLayout>
 
         <Label Text="No tienes cuenta? Registrarse"

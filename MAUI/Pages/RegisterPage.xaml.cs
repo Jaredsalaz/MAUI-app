@@ -11,8 +11,17 @@ namespace MAUI.Pages
 
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
-            // Aquí puedes añadir la lógica para registrar al usuario
-            await DisplayAlert("Registro", "Usuario registrado con éxito", "OK");
+            // Lógica para el registro
+        }
+
+        private async void OnTermsOfUseTapped(object sender, EventArgs e)
+        {
+            await Launcher.OpenAsync("https://www.example.com/terms");
+        }
+
+        private async void OnPrivacyPolicyTapped(object sender, EventArgs e)
+        {
+            await Launcher.OpenAsync("https://www.example.com/privacy");
         }
     }
 }

@@ -1440,10 +1440,6 @@ C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\com.comp
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\com.companyname.maui-Signed.aab
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\com.companyname.maui-Signed.apk
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\com.companyname.maui-Signed.apk.idsig
-C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
-C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\build.props
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\adb.props
@@ -1565,7 +1561,6 @@ C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.Ass
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.csproj.CoreCompileInputs.cache
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.sourcelink.json
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\XamlC.stamp
-C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.csproj.Up2Date
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.dll
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.pdb
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.genruntimeconfig.cache
@@ -2685,3 +2680,8 @@ C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\android\
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\zh-Hant\Microsoft.Maui.Controls.resources.dll
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\zh-HK\Microsoft.Maui.Controls.resources.dll
 C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\_Microsoft.Android.Resource.Designer.dll
+C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\bin\Debug\net9.0-android\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
+C:\Users\MSI\Documents\7semestre\MAUI-app\MAUI\obj\Debug\net9.0-android\MAUI.csproj.Up2Date
