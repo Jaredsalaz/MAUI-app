@@ -471,3 +471,5 @@ C:\Users\MSI\Desktop\Semestre 7\Desarrollo De Sistemas De Informacion\MAUI-app\M
 C:\Users\MSI\Desktop\Semestre 7\Desarrollo De Sistemas De Informacion\MAUI-app\MAUI\obj\Release\net9.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\MSI\Desktop\Semestre 7\Desarrollo De Sistemas De Informacion\MAUI-app\MAUI\obj\Release\net9.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\MSI\Desktop\Semestre 7\Desarrollo De Sistemas De Informacion\MAUI-app\MAUI\obj\Release\net9.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\MSI\Desktop\Semestre 7\Desarrollo De Sistemas De Informacion\MAUI-app\MAUI\obj\Release\net9.0-android\resizetizer\r\drawable\doctor1.png
+C:\Users\MSI\Desktop\Semestre 7\Desarrollo De Sistemas De Informacion\MAUI-app\MAUI\obj\Release\net9.0-android\resizetizer\r\drawable\doctor2.png
