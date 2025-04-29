@@ -11,6 +11,7 @@
         <ShellContent Title="Appointments" ContentTemplate="{DataTemplate local:AppointmentPage}" />
         <ShellContent Title="Set Password" ContentTemplate="{DataTemplate local:SetPasswordPage}" />
         <ShellContent Title="OTP" ContentTemplate="{DataTemplate local:OTPPage}" />
+        <ShellContent Title="Home" ContentTemplate="{DataTemplate local:HomePage}" />
     </ShellItem>
 
 </Shell>

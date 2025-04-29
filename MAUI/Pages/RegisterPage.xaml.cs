@@ -9,7 +9,7 @@ namespace MAUI.Pages
             InitializeComponent();
         }
 
-        private async void OnRegisterClicked(object sender, EventArgs e)
+        private void OnRegisterClicked(object sender, EventArgs e)
         {
             // Lógica para el registro
         }

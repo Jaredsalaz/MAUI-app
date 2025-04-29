@@ -1,0 +1,92 @@
+<!-- filepath: c:\Users\MSI\Desktop\Semestre 7\Desarrollo De Sistemas De Informacion\MAUI-app\MAUI\Pages\HomePage.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.Pages.HomePage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White"
+             Title="Home">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <!-- Header -->
+            <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto">
+                <!-- User Info -->
+                <VerticalStackLayout>
+                    <Label Text="Hola, Andres Mendez"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+                </VerticalStackLayout>
+                <!-- Notification Icon -->
+                <Image Source="notification_icon.png"
+                       HeightRequest="24"
+                       WidthRequest="24"
+                       VerticalOptions="Center"
+                       HorizontalOptions="End" />
+            </Grid>
+
+            <!-- Search Bar -->
+            <Frame BackgroundColor="#F5F5F5"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="0,20,0,20">
+                <HorizontalStackLayout>
+                    <Image Source="search_icon.png"
+                           HeightRequest="20"
+                           WidthRequest="20"
+                           VerticalOptions="Center" />
+                    <Entry Placeholder="Ej: Cardiólogo"
+                           FontSize="14"
+                           Margin="10,0,0,0"
+                           HorizontalOptions="FillAndExpand" />
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Carousel -->
+            <CarouselView HeightRequest="150"
+                          Margin="0,0,0,20">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type FileImageSource}">
+                        <FileImageSource File="carousel_image_1.png" />
+                        <FileImageSource File="carousel_image_2.png" />
+                        <FileImageSource File="carousel_image_3.png" />
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding File}"
+                               Aspect="AspectFill"
+                               HeightRequest="150"
+                               WidthRequest="300" />
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <!-- Top Especialidades -->
+            <Label Text="Top Especialidades"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="0,0,0,10" />
+            <CollectionView x:Name="EspecialidadesCollectionView"
+                            Margin="0,0,0,20">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="4" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout HorizontalOptions="Center">
+                            <Image Source="{Binding Imagen}"
+                                   HeightRequest="60"
+                                   WidthRequest="60"
+                                   Aspect="AspectFill" />
+                            <Label Text="{Binding Nombre}"
+                                   FontSize="12"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="Black" />
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
